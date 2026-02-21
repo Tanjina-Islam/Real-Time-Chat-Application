@@ -1,0 +1,64 @@
+
+#ap_main {
+    -fx-background-color: #B0C4DE;
+}
+#label_title {
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+#button_send {
+    -fx-background-color:  #6495ed;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-radius: 11;
+    -fx-pref-width: 70;
+    -fx-pref-height: 26;
+}
+#button_send:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+#tf_message {
+    -fx-background-radius: 11;
+    -fx-pref-width: 360;
+    -fx-pref-height: 28;
+
+}
+#button_emoji {
+    -fx-background-color: #B0C4DE;
+    -fx-font-size: 10px;
+    -fx-padding: 2px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+
+}
+
+.emoji-box {
+    -fx-background-color: #6495ed;
+    -fx-border-color: #4682B4;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.2, 0, 2);
+}
+
+.emoji-box > Button {
+    -fx-font-size: 10px;
+    -fx-background-color: white;
+   // -fx-border-color: black;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 8px;
+    -fx-padding: 1px 6px;
+}
+
+.emoji-box > Button:hover {
+    -fx-background-color: #e6e6e6;
+    -fx-cursor: hand;
+}
+
+#sp_main {
+    -fx-background-color: #4682B4;
+}
