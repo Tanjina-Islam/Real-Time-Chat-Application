@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="ap_main" prefHeight="272.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatclient.ClientController" stylesheets="@style.css">
+    <children>
+        <HBox layoutX="25.0" layoutY="340" spacing="5" alignment="CENTER_LEFT" prefWidth="420.0">
+
+            <Button fx:id="button_emoji" onAction="#onSendButtonEmoji">
+                <graphic>
+                    <ImageView fx:id="sendIcon" fitHeight="20" fitWidth="20" preserveRatio="true">
+                        <image>
+                            <Image url="@laugh.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <TextField fx:id="tf_message" prefHeight="26" prefWidth="200" onKeyPressed="#onEnterKeyPressed"/>
+            <Button fx:id="button_send"  text="Send" onAction="#onSendButtonClick"/>
+        </HBox>
+
+        <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="256" prefWidth="418">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248" prefWidth="412"/>
+            </content>
+        </ScrollPane>
+    </children>
+    <Label fx:id="label_title"  layoutX="110" layoutY="26" text="CHAT APPLICATION!" textAlignment="CENTER">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="25"/>
+        </font>
+    </Label>
+</AnchorPane>
